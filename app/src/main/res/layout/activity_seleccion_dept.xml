@@ -4,6 +4,117 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SeleccionDept">
+    tools:context=".SeleccionDept"
+    tools:layout_editor_absoluteY="89dp">
 
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="116dp"
+        android:layout_marginTop="91dp"
+        android:text="@string/seleccione_departamento"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnMaquilado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCerrado"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="83dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginTop="254dp"
+        android:text="@string/cerrado"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnTerminado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnMaquilado"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnMaquilado"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="86dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginStart="85dp"
+        android:text="@string/maquilado"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnPlanchado"
+        app:layout_constraintEnd_toStartOf="@+id/btnCerrado"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btnPlanchado"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="134dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginStart="85dp"
+        android:text="@string/planchado"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toStartOf="@+id/btnTerminado"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMaquilado" />
+
+    <Button
+        android:id="@+id/btnTerminado"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="246dp"
+        android:layout_marginEnd="85dp"
+        android:text="@string/terminado"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnConsultar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnPlanchado"
+        app:layout_constraintTop_toBottomOf="@+id/btnCerrado" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
+        android:text="@string/empleados"
+        android:textColor="@android:color/background_dark"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegistrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPlanchado" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="93dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginStart="85dp"
+        android:text="@string/registrar"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnConsultar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <Button
+        android:id="@+id/btnConsultar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="93dp"
+        android:layout_marginEnd="85dp"
+        android:text="@string/consultar"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnRegistrar"
+        app:layout_constraintTop_toBottomOf="@+id/btnTerminado" />
 </android.support.constraint.ConstraintLayout>

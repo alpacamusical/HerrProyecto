@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">HerrProyecto</string>
+    <string name="seleccione_departamento">Seleccione Departamento</string>
+    <string name="cerrado">CERRADO</string>
+    <string name="maquilado">MAQUILADO</string>
+    <string name="planchado">PLANCHADO</string>
+    <string name="terminado">TERMINADO</string>
+    <string name="empleados">Empleados</string>
+    <string name="registrar">REGISTRAR</string>
+    <string name="consultar">Consultar</string>
 </resources>
