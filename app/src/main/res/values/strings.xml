@@ -9,4 +9,7 @@
     <string name="registrar">REGISTRAR</string>
     <string name="consultar">Consultar</string>
     <string name="reporte">Reporte</string>
+    <string name="registro">Registro</string>
+    <string name="nombres">Nombres</string>
+    <string name="apellidos">Apellidos</string>
 </resources>
